@@ -1,13 +1,259 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: block;
+  margin: auto;
 }
+
+.presentSite .navbar {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 88%;
+  height: 93px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 40px;
+  background-color: rgb(46, 44, 44);
+  justify-content: space-between;
+}
+.presentSite .navbar .navbar-brand .img-fluid {
+  height: 90px;
+  margin-left: 10px;
+}
+.presentSite .navbar #btnBars {
+  display: none;
+  font-size: 1.6em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+  transition: all 0.25ms ease;
+}
+.presentSite .navbar #btnBars:hover {
+  transform: rotate(90deg);
+}
+.presentSite .navbar .navbar-nav {
+  align-items: center;
+  -moz-column-gap: 45px;
+       column-gap: 45px;
+}
+.presentSite .navbar .navbar-nav .nav-item .nav-link {
+  color: azure;
+}
+.presentSite .navbar .navbar-nav form input {
+  width: 80%;
+}
+.presentSite .navbar .navbar-nav form #btnSearch {
+  height: 30px;
+  background: transparent;
+  border: 2px solid azure;
+}
+.presentSite .navbar .navbar-nav form #btnSearch .fa-solid {
+  color: azure;
+}
+.presentSite .navbar .navbar-nav form #btnSearch .fa-solid:hover {
+  color: black;
+}
+.presentSite .navbar .navbar-nav form #btnSearch:hover {
+  background-color: azure;
+}
+
+.present {
+  height: 800px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: url("../src/picts/wellifeBackground.jpeg");
+}
+.present .contain {
+  position: relative;
+  top: 25%;
+  left: 63%;
+  width: 36%;
+}
+.present .contain .col-lg-12 p {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 120px;
+}
+.present .contain .col-lg-12 hr {
+  width: 40%;
+  display: block;
+  margin: auto;
+  border: 2px solid black;
+}
+.present .contain .col-lg-12 #btnBegin {
+  padding: 5px;
+  display: block;
+  margin: -27px auto;
+  border-radius: 40px;
+  border: 1px solid black;
+  background-color: cadetblue;
+}
+
+.goal {
+  color: azure;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: auto;
+  border-radius: 40px;
+  background-color: cadetblue;
+  border: 1px solid azure;
+}
+.goal .goalHead {
+  text-align: center;
+}
+.goal .goalHead p {
+  margin: 10px auto;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.goal .goalHead hr {
+  width: 25%;
+  display: block;
+  margin: auto;
+  color: black;
+  border: 3px solid black;
+}
+.goal .goalBody {
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+.goal .goalBody .row .col-lg-4 .fa-solid {
+  font-size: 3.5em;
+}
+.goal .goalBody .row .col-lg-4 p {
+  font-size: 1.4em;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.advice {
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../src/picts/foodsBackground_cleanup.jpg");
+}
+.advice .containAdvice {
+  position: relative;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.advice .containAdvice p {
+  font-size: 1.6em;
+  text-align: center;
+  font-weight: bold;
+  color: azure;
+}
+.advice .containAdvice .listAdvice .row {
+  margin: 20px auto;
+}
+.advice .containAdvice .listAdvice .row .col-lg-4 .card {
+  background-color: cadetblue;
+}
+.advice .containAdvice .listAdvice .row .col-lg-4 .card .rule .fa-solid {
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  transform: translate(-50%, 100%);
+}
+.advice .containAdvice .listAdvice .row .col-lg-4 .card .rule .fa-solid:hover {
+  color: azure;
+}
+.advice .containAdvice .listAdvice .row .col-lg-4 .card .rule .fa-solid .fa-circle-plus {
+  font-size: 2em;
+}
+.advice .containAdvice .listAdvice .row .col-lg-4 .card .points {
+  display: none;
+  margin: 15px auto;
+}
+
+.offcanvas {
+  height: 220px;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 0px 0px 0px 40px;
+  background-color: cadetblue;
+}
+.offcanvas .offcanvas-body {
+  border-radius: 0px 0px 0px 40px;
+  border: 1px solid azure;
+  background-color: cadetblue;
+}
+.offcanvas .offcanvas-body #btnCloseMoove {
+  position: relative;
+  top: -10%;
+  left: 87%;
+  font-size: 1.8em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.offcanvas .offcanvas-body .containNav {
+  text-align: center;
+  line-height: 28px;
+  margin-top: -42px;
+}
+.offcanvas .offcanvas-body .containNav .navbar-nav .nav-item .nav-link {
+  font-size: 1.3em;
+  color: black;
+  font-family: nulshock;
+}
+.offcanvas .offcanvas-body .containNav .navbar-nav .nav-item .nav-link:hover {
+  opacity: 0.7;
+}
+.offcanvas .offcanvas-body .containNav form {
+  margin: 6px auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.offcanvas .offcanvas-body .containNav form input {
+  width: 55%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 992px) {
+  .presentSite .navbar #btnBars {
+    display: block;
+  }
+  .presentSite .navbar .navbar-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .goal {
+    padding: 5px;
+    top: 140%;
+    width: 50%;
+    line-height: 8px;
+  }
+  .goal .goalHead hr {
+    width: 30%;
+    margin-top: 35px;
+    margin-bottom: -15px;
+  }
+  .goal .goalBody .row .col-lg-4 {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */
