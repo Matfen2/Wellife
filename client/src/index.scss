@@ -145,7 +145,7 @@ $thirdColor: cadetblue;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 250px;
+    height: auto;
     border-radius: 40px;
     background-color: $thirdColor;
     border: 1px solid $secondColor;
@@ -185,7 +185,7 @@ $thirdColor: cadetblue;
 
 // BEGIN
 .begin {
-    margin: 290px auto;
+    margin: 310px auto;
     .row {
         .col-lg-4 {
             text-align: center;
@@ -223,9 +223,100 @@ $thirdColor: cadetblue;
     }
 }
 
+// COACH
+.themCoach {
+    margin-top: -250px;
+    .card {
+        display: block;
+        margin: auto;
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        border-radius: 40px;
+        border: 3px solid $firstColor;
+        background-color: $thirdColor;
+        .card-body {
+            .containCoach {
+                .row {
+                    .col-lg-4 {
+                        .coach1 {
+                            height: 370px;
+                            border-radius: 40px;
+                            border: 1px solid $firstColor;
+                        }
+                        .coach2 {
+                            height: 230px;
+                            border-radius: 40px;
+                            border: 1px solid $firstColor;
+                        }
+                        .coach3 {
+                            height: 340px;
+                            border-radius: 40px;
+                            border: 1px solid $firstColor;
+                        }
+                    }
+                    .col-lg-8 {
+                        .nameCoach {
+                            font-size: 2.0em;
+                            color: $secondColor;
+                            font-family: KGBlankSpaceSolid;
+                        }
+                        .describeCoach {
+                            font-size: 1.7em;
+                            color: $secondColor;
+                            font-family: libelSuitRg;
+                        }
+                        .hrefCoach {
+                            text-align: center;
+                            a {
+                                font-size: 1.8em;
+                                color: $secondColor;
+                                text-decoration: none;
+                                font-family: BisonBold;
+                                &:hover {
+                                    color: rgb(248, 155, 33);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .listCoach {
+                margin-top: -27px;
+                margin-bottom: -60px;
+                .row {
+                    text-align: center;
+                    .col-lg-4 {
+                        .coachLogo1, .coachLogo3 {
+                            opacity: 0.7;
+                            cursor: pointer;
+                            height: 140px;
+                            max-width: 200px;
+                            &:hover {
+                                opacity: 1.0;
+                            }
+                        }
+                        .coachLogo2 {
+                            opacity: 0.7;
+                            cursor: pointer;
+                            height: 50px;
+                            max-width: 200px;
+                            margin-top: 45px;
+                            &:hover {
+                                opacity: 1.0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // ADVICE 
 .advice {
-    height: 700px;
+    height: 600px;
+    margin-top: -120px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -274,23 +365,80 @@ $thirdColor: cadetblue;
             }
         }
     }
+    .footer {
+        position: relative;
+        top: 66%;
+        left: 50%;
+        padding: 6px;
+        align-items: center;
+        justify-content: space-between;
+        transform: translate(-50%, -50%);
+        .socialMedia {
+            margin-left: 10px;
+            .fa {
+                padding: 10px;
+                font-size: 1.6em;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+                margin: 2px 2px;
+              }
+              .fa-facebook {
+                color: $firstColor;
+                &:hover {
+                    color: #3B5998; 
+                }
+              }
+              .fa-twitter {
+                color: $firstColor;
+                &:hover {
+                    color: #55ACEE;
+                }
+              }
+              .fa-instagram {
+                color: $firstColor;
+                &:hover {
+                    color: #125688;
+                }
+              }
+        }
+        .copyrigth {
+            font-size: 1.4em;
+            font-family: KGBlankSpaceSolid;
+        }
+        #btnContact {
+            width: 8%;
+            border-radius: 40px;
+            color: $secondColor;
+            transition: all 0.25ms ease;
+            border: 2px solid $firstColor;
+            font-family: KGBlankSpaceSolid;
+            background-color: rgb(248, 155, 33);
+            &:hover {
+                color: $firstColor;
+            }
+            &:active {
+                transform: translateY(10px);
+            }
+        }
+    }
 }
 
 // OFFCANVAS
 .offcanvas {
-    height: 220px;
+    height: 225px;
     width: 100%;
     max-width: 250px;
     border-radius: 0px 0px 0px 40px;
-    background-color: $thirdColor;
+    background-color: rgb(46, 44, 44);
     .offcanvas-body {
         border-radius: 0px 0px 0px 40px;
         border: 1px solid $secondColor;
-        background-color: $thirdColor;
+        background-color: rgb(46, 44, 44);
         #btnCloseMoove {
             position: relative;
             top: -10%;
-            left: 87%;
+            left: 90%;
             font-size: 1.8em;
             color: $secondColor;
             border: transparent;
@@ -301,11 +449,12 @@ $thirdColor: cadetblue;
             line-height: 28px;
             margin-top: -42px;
             .navbar-nav {
+                margin: 10px auto;
                 .nav-item {
                     .nav-link {
                         font-size: 1.3em;
-                        color: $firstColor;
-                        font-family: nulshock;
+                        color: $secondColor;
+                        font-family: KGBlankSpaceSolid;
                         &:hover {
                             opacity: 0.7;
                         }
@@ -318,6 +467,21 @@ $thirdColor: cadetblue;
                 @include flex (row);
                 input {
                     width: 55%;
+                    font-family: KGBlankSpaceSolid;
+                }
+                #btnSearch {
+                    height: 33px;
+                    background: transparent;
+                    border: 2px solid $secondColor;
+                    .fa-solid {
+                        color: $secondColor;
+                        &:hover {
+                            color: $firstColor;
+                        }
+                    }
+                    &:hover {
+                        background-color: $secondColor;
+                    }
                 }
             }
         }
@@ -346,6 +510,33 @@ $thirdColor: cadetblue;
 }
 
 // MEDIA QUERRY
+@media screen and (max-width: 1044px) {
+    .present {
+        .contain {
+            .row {
+                .col-lg-4 {
+                    .updateLife {
+                        color: $secondColor;
+                        text-shadow: 2px 0px 8px #1C6EA4;
+                    }
+                    .moreEnergy {
+                        color: $secondColor;
+                        text-shadow: 2px 0px 8px #1C6EA4;
+                    }
+                    .listProfil {
+                        #btnSend {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .goal {
+        top: 140%;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .presentSite {
         .navbar {
@@ -360,24 +551,57 @@ $thirdColor: cadetblue;
 }
 
 @media screen and (max-width: 991px) {
-    .goal {
-        padding: 5px;
-        top: 140%;
-        width: 50%;
-        line-height: 8px;
-        .goalHead {
-            hr {
-                width: 30%;
-                margin-top: 35px;
-                margin-bottom: -15px;
-            }
-        }
-        .goalBody {
-            .row {
-                .col-lg-4 {
-                    margin-top: 20px;
+    .presentSite {
+        .navbar {
+            width: 92%;
+            height: 90px;
+            padding: 0px;
+            .navbar-brand {
+                .img-fluid {
+                    margin-top: -6px;
                 }
+            }
+            #btnBars {
+                margin-right: 16px;
             }
         }
     }
+    .present {
+        opacity: 0.8;
+        .contain {
+            .row {
+                .col-lg-4 {
+                    .updateLife {
+                        font-size: 2.2em;
+                        color: $secondColor;
+                        text-shadow: 2px 0px 8px #1C6EA4;
+                    }
+                    .moreEnergy {
+                        margin-top: 30px;
+                        color: $secondColor;
+                        text-shadow: 2px 0px 2px #1C6EA4;
+                    }
+                    .listProfil {
+                        margin-top: 30px;
+                        #btnSend {
+                            width: 12%;
+                            margin-top: 15px;
+                            font-size: 1.0em;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+    .begin {
+        margin: 180px auto;
+        .row {
+            .col-lg-4 {
+                margin-bottom: 110px;
+                #btnBegin {
+                    width: 16%;
+                }
+            }
+        }
+    }     
 }

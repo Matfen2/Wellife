@@ -119,7 +119,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  height: 250px;
+  height: auto;
   border-radius: 40px;
   background-color: cadetblue;
   border: 1px solid azure;
@@ -154,7 +154,7 @@ body {
 }
 
 .begin {
-  margin: 290px auto;
+  margin: 310px auto;
 }
 .begin .row .col-lg-4 {
   text-align: center;
@@ -188,8 +188,86 @@ body {
   margin-top: -90px;
 }
 
+.themCoach {
+  margin-top: -250px;
+}
+.themCoach .card {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  border-radius: 40px;
+  border: 3px solid black;
+  background-color: cadetblue;
+}
+.themCoach .card .card-body .containCoach .row .col-lg-4 .coach1 {
+  height: 370px;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+.themCoach .card .card-body .containCoach .row .col-lg-4 .coach2 {
+  height: 230px;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+.themCoach .card .card-body .containCoach .row .col-lg-4 .coach3 {
+  height: 340px;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+.themCoach .card .card-body .containCoach .row .col-lg-8 .nameCoach {
+  font-size: 2em;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+}
+.themCoach .card .card-body .containCoach .row .col-lg-8 .describeCoach {
+  font-size: 1.7em;
+  color: azure;
+  font-family: libelSuitRg;
+}
+.themCoach .card .card-body .containCoach .row .col-lg-8 .hrefCoach {
+  text-align: center;
+}
+.themCoach .card .card-body .containCoach .row .col-lg-8 .hrefCoach a {
+  font-size: 1.8em;
+  color: azure;
+  text-decoration: none;
+  font-family: BisonBold;
+}
+.themCoach .card .card-body .containCoach .row .col-lg-8 .hrefCoach a:hover {
+  color: rgb(248, 155, 33);
+}
+.themCoach .card .card-body .listCoach {
+  margin-top: -27px;
+  margin-bottom: -60px;
+}
+.themCoach .card .card-body .listCoach .row {
+  text-align: center;
+}
+.themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo1, .themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo3 {
+  opacity: 0.7;
+  cursor: pointer;
+  height: 140px;
+  max-width: 200px;
+}
+.themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo1:hover, .themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo3:hover {
+  opacity: 1;
+}
+.themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo2 {
+  opacity: 0.7;
+  cursor: pointer;
+  height: 50px;
+  max-width: 200px;
+  margin-top: 45px;
+}
+.themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo2:hover {
+  opacity: 1;
+}
+
 .advice {
-  height: 700px;
+  height: 600px;
+  margin-top: -120px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -233,23 +311,80 @@ body {
   display: none;
   margin: 15px auto;
 }
+.advice .footer {
+  position: relative;
+  top: 66%;
+  left: 50%;
+  padding: 6px;
+  align-items: center;
+  justify-content: space-between;
+  transform: translate(-50%, -50%);
+}
+.advice .footer .socialMedia {
+  margin-left: 10px;
+}
+.advice .footer .socialMedia .fa {
+  padding: 10px;
+  font-size: 1.6em;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+.advice .footer .socialMedia .fa-facebook {
+  color: black;
+}
+.advice .footer .socialMedia .fa-facebook:hover {
+  color: #3B5998;
+}
+.advice .footer .socialMedia .fa-twitter {
+  color: black;
+}
+.advice .footer .socialMedia .fa-twitter:hover {
+  color: #55ACEE;
+}
+.advice .footer .socialMedia .fa-instagram {
+  color: black;
+}
+.advice .footer .socialMedia .fa-instagram:hover {
+  color: #125688;
+}
+.advice .footer .copyrigth {
+  font-size: 1.4em;
+  font-family: KGBlankSpaceSolid;
+}
+.advice .footer #btnContact {
+  width: 8%;
+  border-radius: 40px;
+  color: azure;
+  transition: all 0.25ms ease;
+  border: 2px solid black;
+  font-family: KGBlankSpaceSolid;
+  background-color: rgb(248, 155, 33);
+}
+.advice .footer #btnContact:hover {
+  color: black;
+}
+.advice .footer #btnContact:active {
+  transform: translateY(10px);
+}
 
 .offcanvas {
-  height: 220px;
+  height: 225px;
   width: 100%;
   max-width: 250px;
   border-radius: 0px 0px 0px 40px;
-  background-color: cadetblue;
+  background-color: rgb(46, 44, 44);
 }
 .offcanvas .offcanvas-body {
   border-radius: 0px 0px 0px 40px;
   border: 1px solid azure;
-  background-color: cadetblue;
+  background-color: rgb(46, 44, 44);
 }
 .offcanvas .offcanvas-body #btnCloseMoove {
   position: relative;
   top: -10%;
-  left: 87%;
+  left: 90%;
   font-size: 1.8em;
   color: azure;
   border: transparent;
@@ -260,10 +395,13 @@ body {
   line-height: 28px;
   margin-top: -42px;
 }
+.offcanvas .offcanvas-body .containNav .navbar-nav {
+  margin: 10px auto;
+}
 .offcanvas .offcanvas-body .containNav .navbar-nav .nav-item .nav-link {
   font-size: 1.3em;
-  color: black;
-  font-family: nulshock;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
 }
 .offcanvas .offcanvas-body .containNav .navbar-nav .nav-item .nav-link:hover {
   opacity: 0.7;
@@ -276,6 +414,21 @@ body {
 }
 .offcanvas .offcanvas-body .containNav form input {
   width: 55%;
+  font-family: KGBlankSpaceSolid;
+}
+.offcanvas .offcanvas-body .containNav form #btnSearch {
+  height: 33px;
+  background: transparent;
+  border: 2px solid azure;
+}
+.offcanvas .offcanvas-body .containNav form #btnSearch .fa-solid {
+  color: azure;
+}
+.offcanvas .offcanvas-body .containNav form #btnSearch .fa-solid:hover {
+  color: black;
+}
+.offcanvas .offcanvas-body .containNav form #btnSearch:hover {
+  background-color: azure;
 }
 
 .footer {
@@ -295,6 +448,22 @@ body {
   font-family: KGBlankSpaceSolid;
   src: url("../src/fonts/KGBlankSpaceSolid.ttf");
 }
+@media screen and (max-width: 1044px) {
+  .present .contain .row .col-lg-4 .updateLife {
+    color: azure;
+    text-shadow: 2px 0px 8px #1C6EA4;
+  }
+  .present .contain .row .col-lg-4 .moreEnergy {
+    color: azure;
+    text-shadow: 2px 0px 8px #1C6EA4;
+  }
+  .present .contain .row .col-lg-4 .listProfil #btnSend {
+    width: 30%;
+  }
+  .goal {
+    top: 140%;
+  }
+}
 @media screen and (max-width: 992px) {
   .presentSite .navbar #btnBars {
     display: block;
@@ -304,18 +473,45 @@ body {
   }
 }
 @media screen and (max-width: 991px) {
-  .goal {
-    padding: 5px;
-    top: 140%;
-    width: 50%;
-    line-height: 8px;
+  .presentSite .navbar {
+    width: 92%;
+    height: 90px;
+    padding: 0px;
   }
-  .goal .goalHead hr {
-    width: 30%;
-    margin-top: 35px;
-    margin-bottom: -15px;
+  .presentSite .navbar .navbar-brand .img-fluid {
+    margin-top: -6px;
   }
-  .goal .goalBody .row .col-lg-4 {
-    margin-top: 20px;
+  .presentSite .navbar #btnBars {
+    margin-right: 16px;
+  }
+  .present {
+    opacity: 0.8;
+  }
+  .present .contain .row .col-lg-4 .updateLife {
+    font-size: 2.2em;
+    color: azure;
+    text-shadow: 2px 0px 8px #1C6EA4;
+  }
+  .present .contain .row .col-lg-4 .moreEnergy {
+    margin-top: 30px;
+    color: azure;
+    text-shadow: 2px 0px 2px #1C6EA4;
+  }
+  .present .contain .row .col-lg-4 .listProfil {
+    margin-top: 30px;
+  }
+  .present .contain .row .col-lg-4 .listProfil #btnSend {
+    width: 12%;
+    margin-top: 15px;
+    font-size: 1em;
+  }
+  .begin {
+    margin: 180px auto;
+  }
+  .begin .row .col-lg-4 {
+    margin-bottom: 110px;
+  }
+  .begin .row .col-lg-4 #btnBegin {
+    width: 16%;
   }
 }/*# sourceMappingURL=index.css.map */
