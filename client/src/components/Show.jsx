@@ -12,7 +12,7 @@ export default function Show() {
                 </div>
                 <div className="col-lg-4">
                   <p className='updateLife'>Améliorer votre santé avec une alimentation saine et énergétique.</p>
-                  <p className='moreEnergy'>Vous voulez améliorer votre vie, faire ce que vous avez envie de faire en ayant plein d'énergie.</p>
+                  <p className='moreEnergy'>Vous voulez améliorer votre vie, faire ce que vous avez envie de faire en ayant le plein d'énergie.</p>
                   <div className="listProfil">
                     <form action='/inscribe' method='POST'>
                       <label for='name'></label>

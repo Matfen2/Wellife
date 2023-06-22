@@ -24,7 +24,7 @@ export default function Coach() {
                       <p className='nameCoach'>Jack's Team</p>
                       <p className='describeCoach'>" J'ai aidé des milliers de personnes à changer 
                       leur alimentation dans mes salles de sport, mes programmes en ligne et les 
-                      séminaires que j'ai donné dans plusieurs pays francophones.Mes vidéos sur 
+                      séminaires que j'ai donné dans plusieurs pays francophones. Mes vidéos sur 
                       l'alimentation anti inflammatoire cumulent plus de 6 millions de vue sur Youtube.
                       Cette alimentation a radicalement changé ma vie et j'ai envie de vous en faire profiter vous aussi. "</p>
                       <p className='hrefCoach'><a href='https://jacksteam.systeme.io/f52a50ca-4380b981'>Lien du site : "https://jacksteam.systeme.io/f52a50ca-4380b981"</a></p>
@@ -52,7 +52,7 @@ export default function Coach() {
                       <img src={alexandreAuffret} className='img-fluid w-100 coach3' alt='pictCoach'/>
                     </div>
                     <div className="col-lg-8">
-                      <p className='nameCoach'>Alexandre Auffret - Tout pour la santé</p>
+                      <p className='nameCoach'>Alex. Auffret</p>
                       <p className='describeCoach'>" Une alimentation saine et équilibrée permet de maintenir et d'améliorer sa santé, en fournissant à notre organisme tous les nutriments essentiels. Cela permet également de réduire les risques de maladies chroniques, de cancer, de maladies cardio vasculaires, de diabète... "</p>
                       <p className='hrefCoach'><a href="https://toutpourmasante.fr">Lien du site : "https://toutpourmasante.fr"</a></p>
                     </div>
@@ -62,13 +62,13 @@ export default function Coach() {
               </div>
               <div className="listCoach">
                 <div className="row">
-                  <div className="col-lg-4">
+                  <div className="col-lg-4 col-md-4 col-sm-4">
                     <img src={jackTeamLogo} className='img-fluid w-100 coachLogo1' onClick={() => setCoach(0)} alt='coachLogo'/>
                   </div>
-                  <div className="col-lg-4">
+                  <div className="col-lg-4 col-md-4 col-sm-4">
                     <img src={bMooveLogo} className='img-fluid w-100 coachLogo2' onClick={() => setCoach(1)} alt='coachLogo'/>
                   </div>
-                  <div className="col-lg-4">
+                  <div className="col-lg-4 col-md-4 col-sm-4">
                     <img src={alexandreAuffretLogo} className='img-fluid w-100 coachLogo3' onClick={() => setCoach(2)} alt='coachLogo'/>
                   </div>
                 </div>

@@ -5,6 +5,7 @@ import Goal from './Goal'
 import Begin from './Begin'
 import Coach from './Coach'
 import Advice from './Advice'
+import Footer from './Footer'
 import Offcanvas from './Offcanvas'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Begin />
         <Coach />
         <Advice />
+        <Footer />
         <Offcanvas />
     </div>
   )

@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default function Advice() {
+    
+
   return (
     <div>
         <div className="advice">
@@ -13,7 +15,7 @@ export default function Advice() {
                                 <div className="card-body">
                                     <div className="rule">
                                         <p>Faire du Sport régulièrement :</p>
-                                        <i class="fa-solid fa-circle-plus"></i>
+                                        <i class="fa-solid fa-circle-plus" id="btnPlus"></i>
                                     </div>
                                     <div className="points">
                                         <ul className="strongPoints">
@@ -30,7 +32,7 @@ export default function Advice() {
                                 <div className="card-body">
                                     <div className="rule">
                                         <p>Eviter les sucres industrielles :</p>
-                                        <i class="fa-solid fa-circle-plus"></i>
+                                        <i class="fa-solid fa-circle-plus" id="btnPlus"></i>
                                     </div>
                                     <div className="points">
                                         <ul className="strongPoints">
@@ -47,7 +49,7 @@ export default function Advice() {
                                 <div className="card-body">
                                     <div className="rule">
                                         <p>Ecoutez plus votre corps :</p>
-                                        <i class="fa-solid fa-circle-plus"></i>
+                                        <i class="fa-solid fa-circle-plus" id="btnPlus"></i>
                                     </div>
                                     <div className="points">
                                         <ul className="strongPoints">
@@ -61,15 +63,6 @@ export default function Advice() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="footer">
-                <div className="socialMedia">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                </div>
-                <p className='copyrigth'>© Wellife 2023</p>
-                <button type='button' id='btnContact' data-bs-toggle="modal" data-bs-target="#contactCoach">CONTACT</button>
             </div>
         </div>
     </div>

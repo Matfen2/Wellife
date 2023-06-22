@@ -110,7 +110,6 @@ $thirdColor: cadetblue;
                 }
                 .listProfil {
                     form {
-                        
                         text-align: center;
                         input {
                             width: 33%;
@@ -119,7 +118,7 @@ $thirdColor: cadetblue;
                         }
                     }
                     #btnSend {
-                        width: 25%;
+                        width: 39%;
                         display: block;
                         margin: 10px auto;
                         border-radius: 40px;
@@ -194,7 +193,7 @@ $thirdColor: cadetblue;
                 font-family: libelSuitRg;
             }
             #btnBegin {
-                width: 38%;
+                width: auto;
                 display: block;
                 margin: 10px auto;
                 border-radius: 40px;
@@ -331,6 +330,7 @@ $thirdColor: cadetblue;
             text-align: center;
             font-weight: bold;
             color: $secondColor;
+            text-shadow: 2px 0px 8px #1C6EA4;
         }
         .listAdvice {
             .row {
@@ -365,63 +365,53 @@ $thirdColor: cadetblue;
             }
         }
     }
-    .footer {
-        position: relative;
-        top: 66%;
-        left: 50%;
-        padding: 6px;
-        align-items: center;
-        justify-content: space-between;
-        transform: translate(-50%, -50%);
-        .socialMedia {
-            margin-left: 10px;
-            .fa {
-                padding: 10px;
-                font-size: 1.6em;
-                width: 50px;
-                text-align: center;
-                text-decoration: none;
-                margin: 2px 2px;
-              }
-              .fa-facebook {
-                color: $firstColor;
-                &:hover {
-                    color: #3B5998; 
-                }
-              }
-              .fa-twitter {
-                color: $firstColor;
-                &:hover {
-                    color: #55ACEE;
-                }
-              }
-              .fa-instagram {
-                color: $firstColor;
-                &:hover {
-                    color: #125688;
-                }
-              }
-        }
-        .copyrigth {
-            font-size: 1.4em;
-            font-family: KGBlankSpaceSolid;
-        }
-        #btnContact {
-            width: 8%;
-            border-radius: 40px;
+}
+
+// FOOTER
+.footer {
+    margin-top: -54px;
+    align-items: center;
+    @include flex (row);
+    justify-content: space-between;
+     .socialMedia {
+        .fa {
+            font-size: 1.5em;
+            column-gap: 40px;
+            margin-right: 15px;
+            margin-left: 15px;
             color: $secondColor;
-            transition: all 0.25ms ease;
-            border: 2px solid $firstColor;
-            font-family: KGBlankSpaceSolid;
-            background-color: rgb(248, 155, 33);
+            text-decoration: none;
+            text-shadow: 2px 0px 8px #1C6EA4;
             &:hover {
-                color: $firstColor;
-            }
-            &:active {
-                transform: translateY(10px);
+                color: $thirdColor;
             }
         }
-    }
+     }
+     .copyrigth {
+        font-size: 1.6em;
+        color: $secondColor;
+        font-family: KGBlankSpaceSolid;
+        text-shadow: 2px 0px 8px #1C6EA4;
+     }
+     #btnContact {
+        width: auto;
+        margin-right: 20px;
+        border-radius: 40px;
+        transition: all 0.25ms ease;
+        border: 2px solid $firstColor;
+        font-family: KGBlankSpaceSolid;
+        background-color: rgb(248, 155, 33);
+        &:active {
+            transform: translateY(10px);
+        }
+        a {
+            color: $firstColor;
+            text-decoration: none;
+            &:hover {
+                color: $secondColor;
+            }
+        }
+     }
 }
 
 // OFFCANVAS
@@ -488,11 +478,6 @@ $thirdColor: cadetblue;
     }
 }
 
-// FOOTER
-.footer {
-    @include flex (row);
-}
-
 // FONTS
 @font-face {
     font-family: BisonBold;
@@ -514,6 +499,7 @@ $thirdColor: cadetblue;
     .present {
         .contain {
             .row {
+                margin-right: 0px;
                 .col-lg-4 {
                     .updateLife {
                         color: $secondColor;
@@ -525,7 +511,7 @@ $thirdColor: cadetblue;
                     }
                     .listProfil {
                         #btnSend {
-                            width: 30%;
+                            width: 55%;
                         }
                     }
                 }
@@ -534,6 +520,23 @@ $thirdColor: cadetblue;
     }
     .goal {
         top: 140%;
+    }
+    .begin {
+        .row {
+            .col-lg-4 {
+                #btnBegin {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .footer {
+        .socialMedia {
+            margin-left: 10px;
+        }
+        #btnContact {
+            width: auto;
+        }
     }
 }
 
@@ -599,9 +602,119 @@ $thirdColor: cadetblue;
             .col-lg-4 {
                 margin-bottom: 110px;
                 #btnBegin {
-                    width: 16%;
+                    width: auto;
                 }
             }
         }
-    }     
+    }   
+    .themCoach {
+        margin-top: -160px;
+        .card {
+            width: 70%;
+            .card-body {
+                .col-lg-8 {
+                    .nameCoach {
+                        text-align: center;
+                    }
+                    .describeCoach {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 767px) {
+    .goal {
+        width: 62%;
+        margin: 20px auto;
+        .goalBody {
+            margin: 15px auto;
+        }
+    }
+    .begin {
+        margin: 275px auto;
+    }
+    .themCoach {
+        margin-top: -230px;
+    }
+    .advice {
+        height: 710px;
+        .containAdvice {
+            top: 53%;
+        }
+        .listAdvice {
+            .row {
+                .col-lg-4 {
+                    .card {
+                        width: 100%;
+                        height: auto;
+                        max-width: 55%;
+                        margin: 15px auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 737px) {
+    .present {
+        .contain {
+            .row {
+                .col-lg-4 {
+                    .updateLife {
+                        margin-right: -5px;
+                    }
+                    .moreEnergy {
+                        margin-right: -30px;
+                    }
+                }
+            }
+        }
+    }
+    .begin {
+        margin: 320px auto;
+    }
+    .goal {
+        top: 145%;
+    }
+    .themCoach {
+        margin-top: -270px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .advice {
+        .containAdvice {
+            top: 55%;
+        }
+    }
+    .footer {
+        margin-top: -45px;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .advice {
+        .listAdvice {
+            .row {
+                .col-lg-4 {
+                    .card {
+                        max-width: 65%;
+                        margin: 15px auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 637px) {
+    .advice {
+        .containAdvice {
+            top: 59%;
+        }
+    }
 }
