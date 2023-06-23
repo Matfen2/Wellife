@@ -87,7 +87,7 @@ body {
 .present .contain .row .col-lg-4 .moreEnergy {
   text-align: center;
   font-size: 1.6em;
-  margin-right: 5px;
+  margin-right: 35px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .present .contain .row .col-lg-4 .listProfil form {
@@ -157,7 +157,8 @@ body {
 }
 
 .begin {
-  margin: 310px auto;
+  margin-top: 230px;
+  margin-bottom: 180px;
 }
 .begin .row .col-lg-4 {
   text-align: center;
@@ -191,85 +192,8 @@ body {
   margin-top: -90px;
 }
 
-.themCoach {
-  margin-top: -250px;
-}
-.themCoach .card {
-  display: block;
-  margin: auto;
-  width: 80%;
-  height: auto;
-  padding: 10px;
-  border-radius: 40px;
-  border: 3px solid black;
-  background-color: cadetblue;
-}
-.themCoach .card .card-body .containCoach .row .col-lg-4 .coach1 {
-  height: 310px;
-  border-radius: 40px;
-  border: 1px solid black;
-}
-.themCoach .card .card-body .containCoach .row .col-lg-4 .coach2 {
-  height: 230px;
-  border-radius: 40px;
-  border: 1px solid black;
-}
-.themCoach .card .card-body .containCoach .row .col-lg-4 .coach3 {
-  height: 260px;
-  border-radius: 40px;
-  border: 1px solid black;
-}
-.themCoach .card .card-body .containCoach .row .col-lg-8 .nameCoach {
-  font-size: 2em;
-  color: azure;
-  font-family: KGBlankSpaceSolid;
-}
-.themCoach .card .card-body .containCoach .row .col-lg-8 .describeCoach {
-  font-size: 1.7em;
-  color: azure;
-  font-family: libelSuitRg;
-}
-.themCoach .card .card-body .containCoach .row .col-lg-8 .hrefCoach {
-  text-align: center;
-}
-.themCoach .card .card-body .containCoach .row .col-lg-8 .hrefCoach a {
-  font-size: 1.8em;
-  color: azure;
-  text-decoration: none;
-  font-family: BisonBold;
-}
-.themCoach .card .card-body .containCoach .row .col-lg-8 .hrefCoach a:hover {
-  color: rgb(248, 155, 33);
-}
-.themCoach .card .card-body .listCoach {
-  margin-top: -27px;
-  margin-bottom: -60px;
-}
-.themCoach .card .card-body .listCoach .row {
-  text-align: center;
-}
-.themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo1, .themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo3 {
-  opacity: 0.7;
-  cursor: pointer;
-  height: 140px;
-  max-width: 200px;
-}
-.themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo1:hover, .themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo3:hover {
-  opacity: 1;
-}
-.themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo2 {
-  opacity: 0.7;
-  cursor: pointer;
-  height: 50px;
-  max-width: 200px;
-  margin-top: 45px;
-}
-.themCoach .card .card-body .listCoach .row .col-lg-4 .coachLogo2:hover {
-  opacity: 1;
-}
-
 .advice {
-  height: 600px;
+  height: 500px;
   margin-top: -120px;
   background-size: cover;
   background-position: center;
@@ -317,10 +241,9 @@ body {
 }
 .advice .containAdvice .listAdvice .row .col-lg-4 .card .points .strongPoints {
   text-align: center;
-  list-style-type: none;
 }
-.advice .containAdvice .listAdvice .row .col-lg-4 .card .points .strongPoints li {
-  font-size: 1.5em;
+.advice .containAdvice .listAdvice .row .col-lg-4 .card .points .strongPoints .strong {
+  font-size: 1.4em;
   margin-right: 25px;
 }
 
@@ -524,10 +447,17 @@ body {
     width: 55%;
   }
   .goal {
-    top: 140%;
+    top: 115%;
   }
-  .begin .row .col-lg-4 #btnBegin {
-    width: 50%;
+  .begin {
+    margin-top: 320px;
+    margin-bottom: 160px;
+  }
+  .advice {
+    height: 625px;
+  }
+  .advice .containAdvice {
+    top: 45%;
   }
   .footer .socialMedia {
     margin-left: 10px;
@@ -599,8 +529,9 @@ body {
     text-align: center;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .goal {
+    top: 98%;
     width: 62%;
     margin: 20px auto;
   }
@@ -608,57 +539,89 @@ body {
     margin: 15px auto;
   }
   .begin {
-    margin: 275px auto;
+    margin-top: 220px;
+    margin-bottom: -10px;
   }
-  .themCoach {
-    margin-top: -230px;
+  .begin .row .col-lg-8 .img-fluid {
+    height: 320px;
+    margin-bottom: 210px;
   }
   .advice {
-    height: 710px;
+    height: 510px;
+    margin-top: -150px;
   }
   .advice .containAdvice {
-    top: 53%;
+    top: 43%;
   }
-  .advice .listAdvice .row .col-lg-4 .card {
-    width: 100%;
-    height: auto;
-    max-width: 55%;
-    margin: 15px auto;
+  .advice .listAdvice .row {
+    margin: -40px auto;
+  }
+  .advice .listAdvice .row .col-lg-4 .card .points .strongPoints {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .advice .listAdvice .row .col-lg-4 .card .points .strongPoints .strong {
+    font-size: 0.7em;
   }
 }
-@media screen and (max-width: 737px) {
-  .present .contain .row .col-lg-4 .updateLife {
-    margin-right: -5px;
-  }
-  .present .contain .row .col-lg-4 .moreEnergy {
-    margin-right: -30px;
-  }
-  .begin {
-    margin: 320px auto;
+@media screen and (max-width: 425px) {
+  .present .contain .row .col-lg-4 .listProfil #btnSend {
+    width: 27%;
   }
   .goal {
-    top: 145%;
+    top: 73%;
+    transform: translate(-50%, 4%);
   }
-  .themCoach {
-    margin-top: -270px;
+  .begin {
+    margin-top: 350px;
   }
-}
-@media screen and (max-width: 735px) {
-  .advice .containAdvice {
-    top: 55%;
+  .advice {
+    height: 950px;
+  }
+  .advice .listAdvice .row .col-lg-4 .card {
+    margin: 20px auto;
   }
   .footer {
-    margin-top: -45px;
+    margin-top: -94px;
   }
 }
-@media screen and (max-width: 648px) {
-  .advice .listAdvice .row .col-lg-4 .card {
-    max-width: 65%;
-    margin: 15px auto;
+@media screen and (max-width: 375px) {
+  .present .contain .row .col-lg-4 .moreEnergy {
+    margin-right: -15px;
+  }
+  .present .contain .row .col-lg-4 .listProfil #btnSend {
+    width: 27%;
+  }
+  .goal {
+    top: 84%;
+    transform: translate(-50%, 4%);
+  }
+  .begin {
+    margin-top: 495px;
+  }
+  .advice {
+    height: 950px;
   }
 }
-@media screen and (max-width: 637px) {
-  .advice .containAdvice {
-    top: 59%;
+@media screen and (max-width: 320px) {
+  .present .contain .row .col-lg-4 .moreEnergy {
+    margin-right: -15px;
+  }
+  .present .contain .row .col-lg-4 .listProfil #btnSend {
+    width: 30%;
+  }
+  .goal {
+    top: 84%;
+    transform: translate(-50%, 4%);
+  }
+  .begin {
+    margin-top: 515px;
+  }
+  .advice {
+    height: 950px;
+  }
+  .footer {
+    margin-top: -134px;
   }
 }/*# sourceMappingURL=index.css.map */

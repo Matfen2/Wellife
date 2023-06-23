@@ -42,11 +42,11 @@ export default function Advice() {
                     {showPoints1 && (
                       <div className="points">
                         <ul className="strongPoints">
-                          <li>
+                          <p className="strong">
                             Limite les risques de maladie cardiovasculaire
-                          </li>
-                          <li>Renforcer l'endormissement</li>
-                          <li>Elimine le stress mental</li>
+                          </p>
+                          <p className="strong">Renforcer l'endormissement</p>
+                          <p className="strong">Elimine le stress mental</p>
                         </ul>
                       </div>
                     )}
@@ -69,11 +69,11 @@ export default function Advice() {
                     {showPoints2 && (
                       <div className="points">
                         <ul className="strongPoints">
-                          <li>Evitez le saute d'humeur d'où le breakEnergy</li>
-                          <li>
-                            Evitez la prise de poids, le diabète de type 2
-                          </li>
-                          <li>Evitez la fatigue chronique, le mal de tete</li>
+                          <p className="strong">Evitez le saute d'humeur d'où le breakEnergy</p>
+                          <p className="strong">
+                            Evitez la prise de poids
+                          </p>
+                          <p className="strong">Evitez la fatigue chronique, le mal de tete</p>
                         </ul>
                       </div>
                     )}
@@ -96,9 +96,9 @@ export default function Advice() {
                     {showPoints3 && (
                       <div className="points">
                         <ul className="strongPoints">
-                          <li>Etre bien dans sa peau</li>
-                          <li>Limite les risques de burn-out, la drépression</li>
-                          <li>Faire ce qui vous plait avec un grand sourire</li>
+                          <p className="strong">Etre bien dans sa peau</p>
+                          <p className="strong">Limite les risques de burn-out, la drépression</p>
+                          <p className="strong">Faire ce qui vous plait</p>
                         </ul>
                       </div>
                     )}

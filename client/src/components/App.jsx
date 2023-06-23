@@ -3,7 +3,6 @@ import Nav from './Navbar'
 import Show from './Show'
 import Goal from './Goal'
 import Begin from './Begin'
-import Coach from './Coach'
 import Advice from './Advice'
 import Footer from './Footer'
 import Contact from './Contact'
@@ -16,7 +15,6 @@ export default function App() {
         <Nav />
         <Goal />
         <Begin />
-        <Coach />
         <Advice />
         <Footer />
         <Contact />
