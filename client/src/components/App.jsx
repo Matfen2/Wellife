@@ -6,6 +6,7 @@ import Begin from './Begin'
 import Coach from './Coach'
 import Advice from './Advice'
 import Footer from './Footer'
+import Contact from './Contact'
 import Offcanvas from './Offcanvas'
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <Coach />
         <Advice />
         <Footer />
+        <Contact />
         <Offcanvas />
     </div>
   )

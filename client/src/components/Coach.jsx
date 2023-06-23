@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import jackTeam from '../picts/coach/jackTeam.jpg'
 import jackTeamLogo from '../picts/coach/jackTeamLogo.png'
-import bMoove from '../picts/coach/bMoove.jpg'
+import bMoove from '../picts/coach/bMoove.png'
 import bMooveLogo from '../picts/coach/bMooveLogo.jpg'
-import alexandreAuffret from '../picts/coach/alexandreauffret.jpg'
+import alexandreAuffret from '../picts/coach/alexandreAuffret.png'
 import alexandreAuffretLogo from '../picts/coach/alexandreAuffretLogo.png'
 
 export default function Coach() {

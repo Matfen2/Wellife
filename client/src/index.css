@@ -67,11 +67,11 @@ body {
 }
 
 .present {
-  height: 800px;
+  height: 910px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background: url("../src/picts/wellifeBackground.jpeg");
+  background: url("../src/picts/wellifeBackground.png");
 }
 .present .contain {
   position: relative;
@@ -99,14 +99,17 @@ body {
   margin-left: 15px;
 }
 .present .contain .row .col-lg-4 .listProfil #btnSend {
-  width: 39%;
+  width: 19%;
   display: block;
-  margin: 10px auto;
+  margin: 15px auto;
   border-radius: 40px;
   transition: all 0.25ms ease;
   border: 2px solid black;
   font-family: KGBlankSpaceSolid;
   background-color: rgb(248, 155, 33);
+}
+.present .contain .row .col-lg-4 .listProfil #btnSend:hover {
+  color: azure;
 }
 .present .contain .row .col-lg-4 .listProfil #btnSend:active {
   transform: translateY(10px);
@@ -115,7 +118,7 @@ body {
 .goal {
   color: azure;
   position: absolute;
-  top: 130%;
+  top: 103%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
@@ -202,7 +205,7 @@ body {
   background-color: cadetblue;
 }
 .themCoach .card .card-body .containCoach .row .col-lg-4 .coach1 {
-  height: 370px;
+  height: 310px;
   border-radius: 40px;
   border: 1px solid black;
 }
@@ -212,7 +215,7 @@ body {
   border: 1px solid black;
 }
 .themCoach .card .card-body .containCoach .row .col-lg-4 .coach3 {
-  height: 340px;
+  height: 260px;
   border-radius: 40px;
   border: 1px solid black;
 }
@@ -309,8 +312,16 @@ body {
   font-size: 2em;
 }
 .advice .containAdvice .listAdvice .row .col-lg-4 .card .points {
-  display: none;
-  margin: 15px auto;
+  margin-top: 50px;
+  margin-bottom: -25px;
+}
+.advice .containAdvice .listAdvice .row .col-lg-4 .card .points .strongPoints {
+  text-align: center;
+  list-style-type: none;
+}
+.advice .containAdvice .listAdvice .row .col-lg-4 .card .points .strongPoints li {
+  font-size: 1.5em;
+  margin-right: 25px;
 }
 
 .footer {
@@ -320,7 +331,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.footer .socialMedia .fa {
+.footer .socialMedia a {
   font-size: 1.5em;
   -moz-column-gap: 40px;
        column-gap: 40px;
@@ -329,9 +340,6 @@ body {
   color: azure;
   text-decoration: none;
   text-shadow: 2px 0px 8px #1C6EA4;
-}
-.footer .socialMedia .fa:hover {
-  color: cadetblue;
 }
 .footer .copyrigth {
   font-size: 1.6em;
@@ -357,6 +365,73 @@ body {
 }
 .footer #btnContact a:hover {
   color: azure;
+}
+.footer #btnContact:hover {
+  color: azure;
+}
+
+#contact {
+  background: url("../src/picts/foodsBackground_cleanup.jpg");
+}
+#contact .modal-dialog .modal-content {
+  opacity: 0.9;
+  background: cadetblue;
+}
+#contact .modal-dialog .modal-content #btnCloseContact {
+  position: relative;
+  top: 3%;
+  left: 46%;
+  cursor: pointer;
+  font-size: 1.4em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+#contact .modal-dialog .modal-content .modal-body {
+  margin-top: -20px;
+}
+#contact .modal-dialog .modal-content .modal-body h3 {
+  text-align: center;
+  color: azure;
+  margin-bottom: 16px;
+  letter-spacing: 3px;
+  font-family: libelSuitRg;
+}
+#contact .modal-dialog .modal-content .modal-body form {
+  color: black;
+  text-align: center;
+  margin-bottom: -10px;
+}
+#contact .modal-dialog .modal-content .modal-body form input {
+  width: 35%;
+  color: black;
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: center;
+}
+#contact .modal-dialog .modal-content .modal-body form textarea {
+  width: 77%;
+  text-align: center;
+  margin: 20px auto;
+  color: black;
+}
+#contact .modal-dialog .modal-content #btnSend {
+  display: block;
+  margin: auto;
+  padding: 7px;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  color: black;
+  background: transparent;
+  transition: all 0.25ms ease;
+  border: 3px solid black;
+  font-family: KGBlankSpaceSolid;
+}
+#contact .modal-dialog .modal-content #btnSend:hover {
+  background: azure;
+}
+#contact .modal-dialog .modal-content #btnSend:active {
+  transform: translateY(20%);
 }
 
 .offcanvas {

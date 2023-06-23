@@ -85,11 +85,11 @@ $thirdColor: cadetblue;
 
 // SHOW 
 .present {
-    height: 800px;
+    height: 910px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background: url('../src/picts/wellifeBackground.jpeg');
+    background: url('../src/picts/wellifeBackground.png');
     .contain {
         position: relative;
         top: 30%;
@@ -118,14 +118,17 @@ $thirdColor: cadetblue;
                         }
                     }
                     #btnSend {
-                        width: 39%;
+                        width: 19%;
                         display: block;
-                        margin: 10px auto;
+                        margin: 15px auto;
                         border-radius: 40px;
                         transition: all 0.25ms ease;
                         border: 2px solid $firstColor;
                         font-family: KGBlankSpaceSolid;
                         background-color: rgb(248, 155, 33);
+                        &:hover {
+                            color: $secondColor;
+                        }
                         &:active {
                             transform: translateY(10px);
                         }
@@ -140,7 +143,7 @@ $thirdColor: cadetblue;
 .goal {
     color: $secondColor;
     position: absolute;
-    top: 130%;
+    top: 103%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -239,7 +242,7 @@ $thirdColor: cadetblue;
                 .row {
                     .col-lg-4 {
                         .coach1 {
-                            height: 370px;
+                            height: 310px;
                             border-radius: 40px;
                             border: 1px solid $firstColor;
                         }
@@ -249,7 +252,7 @@ $thirdColor: cadetblue;
                             border: 1px solid $firstColor;
                         }
                         .coach3 {
-                            height: 340px;
+                            height: 260px;
                             border-radius: 40px;
                             border: 1px solid $firstColor;
                         }
@@ -357,8 +360,16 @@ $thirdColor: cadetblue;
                             }
                         }
                         .points {
-                            display: none;
-                            margin: 15px auto;
+                            margin-top: 50px;
+                            margin-bottom: -25px;
+                            .strongPoints {
+                                text-align: center;
+                                list-style-type: none;
+                                li {
+                                    font-size: 1.5em;
+                                    margin-right: 25px;
+                                }
+                            }
                         }
                     }
                 }
@@ -374,7 +385,7 @@ $thirdColor: cadetblue;
     @include flex (row);
     justify-content: space-between;
      .socialMedia {
-        .fa {
+        a {
             font-size: 1.5em;
             column-gap: 40px;
             margin-right: 15px;
@@ -382,9 +393,6 @@ $thirdColor: cadetblue;
             color: $secondColor;
             text-decoration: none;
             text-shadow: 2px 0px 8px #1C6EA4;
-            &:hover {
-                color: $thirdColor;
-            }
         }
      }
      .copyrigth {
@@ -411,7 +419,77 @@ $thirdColor: cadetblue;
                 color: $secondColor;
             }
         }
+        &:hover {
+            color: $secondColor;
+        }
      }
+}
+
+// CONTACT
+#contact {
+    background: url('../src/picts/foodsBackground_cleanup.jpg');
+    .modal-dialog {
+        .modal-content {
+            opacity: 0.9;
+            background: $thirdColor;
+            #btnCloseContact {
+                position: relative;
+                top: 3%;
+                left: 46%;
+                cursor: pointer;
+                font-size: 1.4em;
+                color: $secondColor;
+                border: transparent;
+                background: transparent;
+            }
+            .modal-body {
+                margin-top: -20px;
+                h3 {
+                    text-align: center;
+                    color: $secondColor;
+                    margin-bottom: 16px;
+                    letter-spacing: 3px;
+                    font-family: libelSuitRg;
+                }
+                form {
+                    color: $firstColor;
+                    text-align: center;
+                    margin-bottom: -10px;
+                    input {
+                        width: 35%;
+                        color: $firstColor;
+                        margin-right: 15px;
+                        margin-left: 15px;
+                        text-align: center;
+                    }
+                    textarea {
+                        width: 77%;
+                        text-align: center;
+                        margin: 20px auto;
+                        color: $firstColor;
+                    }
+                }
+            }
+            #btnSend {
+                display: block;
+                margin: auto;
+                padding: 7px;
+                font-size: 0.7em;
+                letter-spacing: 2px;
+                color: $firstColor;
+                background: transparent;
+                transition: all 0.25ms ease;
+                border: 3px solid $firstColor;
+                font-family: KGBlankSpaceSolid;
+                &:hover {
+                    background: $secondColor;
+                }
+                &:active {
+                    transform: translateY(20%);
+                }
+            }
+        }
+    }
 }
 
 // OFFCANVAS
