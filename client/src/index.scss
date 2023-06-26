@@ -187,7 +187,7 @@ $thirdColor: cadetblue;
 
 // BEGIN
 .begin {
-    margin-top: 230px;
+    margin-top: 320px;
     margin-bottom: 180px;
     .row {
         .col-lg-4 {
@@ -483,6 +483,25 @@ $thirdColor: cadetblue;
 }
 
 // MEDIA QUERRY
+@media screen and (max-width: 1477px) {
+    .present {
+    .contain {
+        .row {
+            .col-lg-4 {
+                .listProfil {
+                    #btnSend {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+    .begin {
+        margin-top: 260px;
+    }
+}
+
 @media screen and (max-width: 1044px) {
     .present {
         .contain {

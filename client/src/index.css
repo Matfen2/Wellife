@@ -157,7 +157,7 @@ body {
 }
 
 .begin {
-  margin-top: 230px;
+  margin-top: 320px;
   margin-bottom: 180px;
 }
 .begin .row .col-lg-4 {
@@ -430,6 +430,14 @@ body {
 @font-face {
   font-family: KGBlankSpaceSolid;
   src: url("../src/fonts/KGBlankSpaceSolid.ttf");
+}
+@media screen and (max-width: 1477px) {
+  .present .contain .row .col-lg-4 .listProfil #btnSend {
+    width: auto;
+  }
+  .begin {
+    margin-top: 260px;
+  }
 }
 @media screen and (max-width: 1044px) {
   .present .contain .row {
